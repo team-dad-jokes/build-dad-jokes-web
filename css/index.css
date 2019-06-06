@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.main-navigation {
+  background-color: #071a52;
+  height: 60px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .main-navigation {
+    width: 100%;
+  }
+}
+.main-navigation .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container {
+    flex-direction: row-reverse;
+  }
+}
+.main-navigation .nav-container h1 {
+  font-size: 4.5rem;
+  color: white;
+  padding: 5px 0 0 30px;
+}
+.main-navigation .nav-container .nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 370px;
+  padding-right: 25px;
+}
+.main-navigation .nav-container .nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+#landingBackground {
+  background-image: url('../img/landingB-Img.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-color: #fed158;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+@media (max-width: 500px) {
+  #landingBackground {
+    background-position-x: -300px;
+  }
+}
+.landingContent {
+  display: flex;
+  width: 25%;
+  margin: 50px 0 0 350px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .landingContent {
+    margin: 50px;
+  }
+}
+.landingContent p {
+  font-size: 1.8rem;
+  line-height: 2;
+  margin-bottom: 10px;
+  font-family: 'Fjalla One', sans-serif;
+}
+.btn {
+  padding: 15px;
+  width: 100%;
+  background-color: #071a52;
+  border-radius: 2em;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+#featuresBackground {
+  background: url('../img/featuresImg.jpg') no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 25px;
+  margin-left: 335px;
+  border: 1px solid Black;
+  width: 50%;
+  color: #17b978;
+}
+.feats {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.feats p {
+  font-size: 1.8rem;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 15px;
+  background-color: white;
+}
+.featureOne,
+.featureThree {
+  margin-left: 30px;
+}
+.featureTwo,
+.featureFour {
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+#joinBackground {
+  background: url('../img/loginImage.jpg') no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+.loginPage {
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+.form .message {
+  margin: 15px 0 0;
+  font-weight: 900;
+}
+.form .message a {
+  text-decoration: none;
+}
+.form input {
+  font-family: "Roboto", sans-seriff;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+.login-btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #d8dce5;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin-bottom: 5px;
+  opacity: 0.1;
+}
+.form button:hover,
+.form button:active {
+  background: #fed158;
+}
