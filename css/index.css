@@ -148,7 +148,7 @@ p {
   height: 60px;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .main-navigation {
     width: 100%;
   }
@@ -158,7 +158,7 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .main-navigation .nav-container {
     flex-direction: row-reverse;
   }
@@ -167,6 +167,12 @@ p {
   font-size: 4.5rem;
   color: white;
   padding: 5px 0 0 30px;
+}
+@media (max-width: 480px) {
+  .main-navigation .nav-container h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 .main-navigation .nav-container .nav {
   display: flex;
@@ -178,6 +184,11 @@ p {
   color: white;
   text-decoration: none;
   font-size: 2rem;
+}
+@media (max-width: 480px) {
+  .main-navigation .nav-container .nav a {
+    font-size: 1rem;
+  }
 }
 #landingBackground {
   background-image: url('../img/landingB-Img.jpg');
@@ -193,9 +204,10 @@ p {
   -o-background-size: cover;
   -webkit-background-size: cover;
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   #landingBackground {
-    background-position-x: -300px;
+    background-position-x: -525px;
+    background-position-y: 30px;
   }
 }
 .landingContent {
@@ -205,7 +217,7 @@ p {
   flex-wrap: wrap;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .landingContent {
     margin: 50px;
   }
@@ -315,9 +327,13 @@ h2 {
   font-weight: 900;
   cursor: pointer;
   margin-bottom: 5px;
-  opacity: 0.1;
+  opacity: 0.2;
+}
+.login-btn a {
+  text-decoration: none;
+  color: black;
 }
 .form button:hover,
 .form button:active {
-  background: #fed158;
+  background: #FE6608;
 }
