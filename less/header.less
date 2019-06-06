@@ -1,0 +1,42 @@
+.main-navigation{
+    background-color: @mainColor;
+    height: 60px;
+    width: 100%;
+  @media @mobile {
+     width: 100%;
+  }
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media @mobile {
+            flex-direction: row-reverse;
+        }
+        h1 {
+            font-size: 4.5rem;
+            color: white;
+            padding: 5px 0 0 30px;;
+            @media @mobile {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+        }
+        .nav{
+            display: flex;
+            justify-content: space-evenly;
+            width: 370px;
+            padding-right: 25px;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 2rem;
+                @media @mobile {
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+    }
+}
+
